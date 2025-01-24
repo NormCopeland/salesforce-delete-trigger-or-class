@@ -24,6 +24,15 @@ Let's say that you have a Salesforce production org that has two Apex classes th
 
 2. Go to Notepad (or another text editor) and copy and paste the below and save as the file with 'package.xml' and 'All files (*.*)'
 
+```xml
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<package xmlns="http://soap.sforce.com/2006/04/metadata">
+     <version>30.0</version>
+</package>
+```
+
+![image01](images/image01.png)
+
 3. Then create a new file in Notepad (or another text editor) and copy the below into it:
 
 ```xml
@@ -51,15 +60,21 @@ Replace **SomeClass** with the name of your class that you wish to delete. If yo
 
 4. Save this file name as destructiveChanges.xml (note the capital 'C' in 'changes'). Make sure the file is saved as 'All files (*.*)'
 
-5. Now there are two files in your folder. Open the folder, select both the XML files, right-click and select 'Send To > Compressed Folder'. Keeping the default name of 'package' for the folder is fine
+![image01](images/image02.png)
+
+5. Now there are two files in your folder. Open the folder, select both the XML files, right-click and select 'Send To > Compressed Folder'. Keeping the default name of 'package' for the folder is fine.
+
+![image01](images/image03.png)
 
 6. Go to [Workbench](https://workbench.developerforce.com/login.php?startUrl=%2Fquery.php) and login with your credentials. It is recommended that you login to a Sandbox instance before you deploy the file to production
 
 7. Select Migration > Deploy
 
-8. Click 'Browse' and select the .zip package file. Then check 'Rollback on Error', 'Single Package', and select Test Level with 'RunLocalTests'
+8. Click 'Browse' and select the .zip package file. Then check 'Rollback on Error', 'Single Package', and select Test Level with 'RunLocalTests'.
 
-9. Finally, select 'Next' and then you will notice that the success or error results will be displayed in Workbench once the deployment process has been completed
+![image01](images/image04.png)
+
+9.  Finally, select 'Next' and then you will notice that the success or error results will be displayed in Workbench once the deployment process has been completed
 
 ## Summary
 
