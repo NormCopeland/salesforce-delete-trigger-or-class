@@ -22,19 +22,20 @@ Here's the step-by-step summary for deleting Apex classes from Salesforce Produc
              <members>AnotherClassName</members>
              <name>ApexClass</name>
         </types>
-   <version>30.0</version>
+   <version>59.0</version>
    </Package>
    ```
-   or a trigger:
+   or set it up for a trigger:
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
         <types>
              <members>triggerName</members>
              <members></members>
              <name>Trigger</name>
         </types>
-   <version>30.0</version>
+   <version>59.0</version>
    </Package>
-
+    ```
 4. Save both files.
 
 5. Compress both XML files into a ZIP file (named 'package')
